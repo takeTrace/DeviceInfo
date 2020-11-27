@@ -28,8 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3040F287AF5AB802C9DB5DA3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		3E07A5FCA09A15511580EE00 /* DeviceInfo.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = DeviceInfo.podspec; path = ../DeviceInfo.podspec; sourceTree = "<group>"; };
+		3040F287AF5AB802C9DB5DA3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		3E07A5FCA09A15511580EE00 /* DeviceInfo.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DeviceInfo.podspec; path = ../DeviceInfo.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3F966E8983B9F9C6C59AD137 /* Pods-DeviceInfo_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeviceInfo_Example.debug.xcconfig"; path = "Target Support Files/Pods-DeviceInfo_Example/Pods-DeviceInfo_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		438A84204ADB52A552D69B54 /* Pods-DeviceInfo_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeviceInfo_Example.release.xcconfig"; path = "Target Support Files/Pods-DeviceInfo_Example/Pods-DeviceInfo_Example.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* DeviceInfo_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeviceInfo_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,7 +42,7 @@
 		607FACE51AFB9204008FA782 /* DeviceInfo_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeviceInfo_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		732C0D5E731E5D47E2997095 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		732C0D5E731E5D47E2997095 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		81C6364CF68297235EBF7F5A /* Pods_DeviceInfo_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeviceInfo_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB94CB82E1B82EFD86D280E1 /* Pods-DeviceInfo_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeviceInfo_Tests.debug.xcconfig"; path = "Target Support Files/Pods-DeviceInfo_Tests/Pods-DeviceInfo_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B7227A52666FAAFCCAA6791A /* Pods-DeviceInfo_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeviceInfo_Tests.release.xcconfig"; path = "Target Support Files/Pods-DeviceInfo_Tests/Pods-DeviceInfo_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -156,7 +156,6 @@
 				AB94CB82E1B82EFD86D280E1 /* Pods-DeviceInfo_Tests.debug.xcconfig */,
 				B7227A52666FAAFCCAA6791A /* Pods-DeviceInfo_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -228,6 +227,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -313,10 +313,16 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-DeviceInfo_Example/Pods-DeviceInfo_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/DeviceInfo/DeviceInfo.framework",
+				"${BUILT_PRODUCTS_DIR}/DeviceKit/DeviceKit.framework",
+				"${BUILT_PRODUCTS_DIR}/LFPhoneInfo/LFPhoneInfo.framework",
+				"${BUILT_PRODUCTS_DIR}/TakeTPhoneInfo/TakeTPhoneInfo.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DeviceInfo.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DeviceKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LFPhoneInfo.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TakeTPhoneInfo.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

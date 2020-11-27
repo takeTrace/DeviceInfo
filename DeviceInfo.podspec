@@ -9,34 +9,20 @@
 Pod::Spec.new do |s|
   s.name             = 'DeviceInfo'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of DeviceInfo.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
+  s.summary          = 'A Map for other framework of get device info.'
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+collection of other framework to get device info because there repo exist doesn't cover all my need, so I merge and map it for my use
                        DESC
 
   s.homepage         = 'https://github.com/takeTrace/DeviceInfo'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+   s.screenshots     = 'https://github.com/takeTrace/DeviceInfo/SimulatorScreenShot.png'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'takeTrace' => 'gitTrace@666.com' }
+  s.author           = { 'takeTrace' => 'takeTrace00@gmail.com' }
   s.source           = { :git => 'https://github.com/takeTrace/DeviceInfo.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'DeviceInfo/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'DeviceInfo' => ['DeviceInfo/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'DeviceKit'
+  s.dependency 'TakeTPhoneInfo'
 end
