@@ -5,6 +5,10 @@
 [![License](https://img.shields.io/cocoapods/l/DeviceInfo.svg?style=flat)](https://cocoapods.org/pods/DeviceInfo)
 [![Platform](https://img.shields.io/cocoapods/p/DeviceInfo.svg?style=flat)](https://cocoapods.org/pods/DeviceInfo)
 
+![screenshot](./SimulatorScreenShot.png)
+
+collection of other framework to get device info because there repo exist doesn't cover all my need, so I merge and map it for my use
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
