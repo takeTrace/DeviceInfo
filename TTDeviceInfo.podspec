@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'DeviceInfo'
+  s.name             = 'TTDeviceInfo'
   s.version          = '0.1.0'
   s.summary          = 'A Map for other framework of get device info.'
   s.description      = <<-DESC
