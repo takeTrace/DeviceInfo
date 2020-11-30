@@ -8,10 +8,11 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TTDeviceInfo'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A Map for other framework of get device info.'
   s.description      = <<-DESC
-collection of other framework to get device info because there repo exist doesn't cover all my need, so I merge and map it for my use
+collection of other framework to get device info because there repo exist doesn't cover all my need, so I merge and map it for my use.
+0.1.1 fix: import error
                        DESC
 
   s.homepage         = 'https://github.com/takeTrace/DeviceInfo'

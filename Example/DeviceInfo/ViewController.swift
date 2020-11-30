@@ -28,6 +28,11 @@ class ViewController: UITableViewController {
         tableView.delegate = self
         
         title = "support value count: \(datas.count)"
+        
+        // test accessible for typealieas to LFPhoneInfo & DeviceKit
+        print(DeviceInfo.Kit.current.batteryLevel ?? 0)
+        print("---------------------------------")
+        print(DeviceInfo.LFP.appTakeUpMemory)
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
