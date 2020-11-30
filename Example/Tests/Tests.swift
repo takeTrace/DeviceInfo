@@ -2,7 +2,7 @@
 
 import Quick
 import Nimble
-import DeviceInfo
+import TTDeviceInfo
 
 class TableOfContentsSpec: QuickSpec {
     override func spec() {
