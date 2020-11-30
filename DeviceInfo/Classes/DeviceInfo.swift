@@ -185,7 +185,7 @@ public struct DeviceInfo {
 }
 
 extension Device.Orientation {
-    var name: String {
+    public var name: String {
         switch self {
         case .landscape: return "landscape"
         case .portrait: return "portrait"
@@ -194,7 +194,7 @@ extension Device.Orientation {
 }
 
 extension Device.CameraType {
-    var string: String {
+    public var string: String {
         switch self {
         case .wide: return "wide"
         case .telephoto: return "telephoto"
@@ -206,7 +206,7 @@ extension Device.CameraType {
 
 extension LFPhoneInfo {
     
-    static var cpuTypeString: String {
+    public static var cpuTypeString: String {
         switch LFPhoneInfo.deviceCPUType {
         case .ARM: return "ARM"
         case .ARM64: return "ARM64"
@@ -218,7 +218,7 @@ extension LFPhoneInfo {
         }
     }
     
-    static var deviceTypeString: String {
+    public static var deviceTypeString: String {
         switch deviceType {
         case .unkown:        return "unkown"
         case .iPhone:         return "iPhone"
