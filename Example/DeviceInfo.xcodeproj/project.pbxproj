@@ -312,16 +312,16 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-DeviceInfo_Example/Pods-DeviceInfo_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/DeviceInfo/DeviceInfo.framework",
 				"${BUILT_PRODUCTS_DIR}/DeviceKit/DeviceKit.framework",
 				"${BUILT_PRODUCTS_DIR}/LFPhoneInfo/LFPhoneInfo.framework",
+				"${BUILT_PRODUCTS_DIR}/TTDeviceInfo/TTDeviceInfo.framework",
 				"${BUILT_PRODUCTS_DIR}/TakeTPhoneInfo/TakeTPhoneInfo.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DeviceInfo.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DeviceKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LFPhoneInfo.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTDeviceInfo.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TakeTPhoneInfo.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

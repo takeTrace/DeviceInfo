@@ -12,8 +12,8 @@ import CoreTelephony
 import TakeTPhoneInfo
 
 public struct DeviceInfo {
-    typealias Kit = Device
-    typealias LFP = LFPhoneInfo
+    public typealias Kit = Device
+    public typealias LFP = LFPhoneInfo
     
     static let emptyDisplayString = ""
     static let emptyDispalyInt = 0

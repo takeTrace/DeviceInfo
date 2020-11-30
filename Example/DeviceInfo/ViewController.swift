@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import DeviceInfo
+import TTDeviceInfo
 
 class ViewController: UITableViewController {
     

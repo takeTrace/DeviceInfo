@@ -1,18 +1,18 @@
 PODS:
-  - DeviceInfo (0.1.0):
-    - DeviceKit
-    - TakeTPhoneInfo
   - DeviceKit (4.2.1)
   - LFPhoneInfo (0.1.7)
   - Nimble (7.3.4)
   - Quick (1.2.0)
   - TakeTPhoneInfo (0.1.0):
     - LFPhoneInfo
+  - TTDeviceInfo (0.1.0):
+    - DeviceKit
+    - TakeTPhoneInfo
 
 DEPENDENCIES:
-  - DeviceInfo (from `../`)
   - Nimble (~> 7.0)
   - Quick (~> 1.2.0)
+  - TTDeviceInfo (from `../`)
 
 SPEC REPOS:
   trunk:
@@ -23,17 +23,17 @@ SPEC REPOS:
     - TakeTPhoneInfo
 
 EXTERNAL SOURCES:
-  DeviceInfo:
+  TTDeviceInfo:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DeviceInfo: 0ed2cb3c31327d5e4cb957ee37e7aac1e36bc313
   DeviceKit: cadb5ff25d45fe186778bf2d0fd2ea4750542189
   LFPhoneInfo: 3f0ab6cad089a3e403fc322735107e87bc63c9d0
   Nimble: 051e3d8912d40138fa5591c78594f95fb172af37
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
   TakeTPhoneInfo: 85a59125e759e9abbd92ab8db84d824840776a3e
+  TTDeviceInfo: 8e09eb846eb110cc38a9225ab5aab5e5e16e2875
 
-PODFILE CHECKSUM: d35285d8e697d9304023ce7ddc70a95e905214f2
+PODFILE CHECKSUM: 93ee8a6704c2d8f7b1ad43111bf96422da05799f
 
 COCOAPODS: 1.10.0

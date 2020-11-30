@@ -1,7 +1,7 @@
 use_frameworks!
 
 target 'DeviceInfo_Example' do
-  pod 'DeviceInfo', :path => '../'
+  pod 'TTDeviceInfo', :path => '../'
 
   target 'DeviceInfo_Tests' do
     inherit! :search_paths
