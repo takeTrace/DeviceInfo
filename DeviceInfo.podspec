@@ -15,7 +15,7 @@ collection of other framework to get device info because there repo exist doesn'
                        DESC
 
   s.homepage         = 'https://github.com/takeTrace/DeviceInfo'
-   s.screenshots     = 'https://github.com/takeTrace/DeviceInfo/SimulatorScreenShot.png'
+  s.screenshots     = 'https://github.com/takeTrace/DeviceInfo/blob/main/SimulatorScreenShot.png'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'takeTrace' => 'takeTrace00@gmail.com' }
   s.source           = { :git => 'https://github.com/takeTrace/DeviceInfo.git', :tag => s.version.to_s }
@@ -25,4 +25,6 @@ collection of other framework to get device info because there repo exist doesn'
   s.source_files = 'DeviceInfo/Classes/**/*'
   s.dependency 'DeviceKit'
   s.dependency 'TakeTPhoneInfo'
+  s.swift_version = '5.0'
+  s.cocoapods_version = '>= 1.10.0'
 end
