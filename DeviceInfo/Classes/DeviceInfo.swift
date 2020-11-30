@@ -12,6 +12,8 @@ import CoreTelephony
 import TakeTPhoneInfo
 
 public struct DeviceInfo {
+    typealias Kit = Device
+    typealias LFP = LFPhoneInfo
     
     static let emptyDisplayString = ""
     static let emptyDispalyInt = 0
@@ -138,6 +140,10 @@ public struct DeviceInfo {
     public static func allValueMap(emptyString: String? = nil,
                                    emptyNumber: Int? = nil) -> [String: Any] {
         return [
+            // check if it work
+            "LFPhoneInfo.systemVersion": "version from LFPhoneInfo: \(LFP.deviceSystemVersion)",
+            "DeviceKit.current.systemVersion": "version from DeviceKit: \(Kit.current.systemVersion ?? "null")",
+            "DeviceKit.": "identifier of DeviceKit: \(Kit.identifier)",
             "inchSize": inchSize,
             "deviceName": deviceName ?? "",
             "deviceSettingName": deviceSettingName
@@ -183,6 +189,17 @@ extension Device.Orientation {
         switch self {
         case .landscape: return "landscape"
         case .portrait: return "portrait"
+        }
+    }
+}
+
+extension Device.CameraType {
+    var string: String {
+        switch self {
+        case .wide: return "wide"
+        case .telephoto: return "telephoto"
+        case .ultraWide: return "ultraWide"
+        case .normal: return "wide"
         }
     }
 }
